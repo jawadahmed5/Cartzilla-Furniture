@@ -9,3 +9,13 @@ background-color: black;
 font-size: 8px;
 border: 1px solid red;
 }
+
+.first-row-text{
+    font-size: 12px;
+
+}
+
+.first-row-text:hover{
+    cursor: pointer;
+border-bottom: 1px solid black;
+}
