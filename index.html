@@ -29,25 +29,25 @@
               <iconify-icon class="icon  bg-danger rounded-pill fw-bolder fs-1 p-1 "
                 icon="mdi-light:cart"></iconify-icon>
             </button>
-            <h2 class=" ">Cartzilla</h2>
+            <h2 class=" mt-2">Cartzilla</h2>
           </div>
 
           <h1 class="mt-4 ">Create an account</h1>
           <p>I already have an account <a href="/pages/login.html" class="text-black">Sign in</a></p>
 
-          <form action="">
+          <form action="" id="signUpForm">
             <div class="mb-3 mt-3">
-              <label for="exampleFormControlInput1" class="form-label mt-3">Email address</label>
-              <input type="email" class="form-control py-3" id="exampleFormControlInput1" placeholder="Email Address"
+              <label for="emailInput" class="form-label mt-3">Email address</label>
+              <input type="email" class="form-control py-3" id="emailInput" placeholder="Email Address"
                 required>
             </div>
-            <label for="inputPassword5" class="form-label ">Password</label>
-            <input type="password" id="inputPassword5" class="form-control py-3" aria-describedby="passwordHelpBlock"
+            <label for="passwordInput" class="form-label ">Password</label>
+            <input type="password" id="passwordInput" class="form-control py-3" aria-describedby="passwordHelpBlock"
               placeholder="Password" required>
             <div id="passwordHelpBlock" class="form-text mt-2 mb-3">
             </div>
             <input type="checkbox"><span class="form-text ms-2 mt-5">I have read and accept the Privacy Policy</span>
-            <button type="button" class="btn btn-danger w-100 py-2 fw-semibold mt-4 mb-2 fs-5">Create an account
+            <button type="submit" class="btn btn-danger w-100 py-2 fw-semibold mt-4 mb-2 fs-5">Create an account
               ></button>
 
             <span class="">Need help?</span>
@@ -68,18 +68,22 @@
         <h3 class="text-center">Cartzilla account benefits</h3>
         <div class="container-fluid">
           <div class="row">
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 "
-                icon="lets-icons:message-light"></iconify-icon>
-              <p>View and manage your orders and wishlist</p>
-            </div>
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center  p-5 fw-bold ">
+              <div class="border-2 border  border-white py-3 rounded-4 px-5 bg-primary-subtle bg-primary-subtle ">
 
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder fs-1 p-1 "
-                icon="lets-icons:setting-line"></iconify-icon>
-              <p>Earn rewards for future purchases</p>
+                <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 "
+                  icon="lets-icons:message-light"></iconify-icon>
+                <p>View and manage your orders and wishlist</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center p-5 fw-bold   ">
+              <div>
+                <div class="border-2 border  border-white py-3 rounded-4 px-5 bg-primary-subtle ">
+                  <iconify-icon class="icon border  bg-white rounded-pill fw-bolder fs-1 p-1 "
+                    icon="lets-icons:setting-line"></iconify-icon>
+                  <p>Earn rewards for future purchases</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -88,18 +92,23 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 "
-                icon="mdi:gift"></iconify-icon>
-              <p>Subscribe to your favorite products</p>
-            </div>
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center p-5 fw-bold ">
+              <div class="border-2 border  border-white py-3 rounded-4 px-5 bg-primary-subtle ">
 
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder fs-1 p-1 "
-                icon="ri:percent-fill"></iconify-icon>
-              <p>Receive exclusive offers and discounts</p>
+                <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 " icon="mdi:gift"></iconify-icon>
+                <p>Subscribe to your favorite products</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center p-5 fw-bold ">
+
+
+              <div class="border-2 border  border-white py-3 rounded-4 px-5 bg-primary-subtle ">
+
+                <iconify-icon class="icon  bg-white rounded-pill fw-bolder fs-1 p-1 "
+                  icon="ri:percent-fill"></iconify-icon>
+                <p>Receive exclusive offers and discounts</p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -115,18 +124,27 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 "
-                icon="line-md:heart-filled"></iconify-icon>
-              <p>Create multiple wishlists</p>
-            </div>
-            <div
-              class="col-lg-6 col-md-6 col-sm-12  text-center p-5 rounded-4 fw-bold bg-primary-subtle border border-2 border-white">
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center p-5 fw-bold ">
 
-              <iconify-icon class="icon  bg-white rounded-pill fw-bolder fs-1 p-1 "
-                icon="lets-icons:message-light"></iconify-icon>
-              <p>Pay for purchases by installments</p>
+              <div class="border-2 border  border-white py-3 rounded-4 px-5 ">
+
+                <iconify-icon class="icon  bg-white rounded-pill fw-bolder  fs-1 p-1 "
+                  icon="line-md:heart-filled"></iconify-icon>
+                <p>Create multiple wishlists
+                  <br>
+                  &nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12  text-center p-5 fw-bold ">
+
+              <div class="border-2 border  border-white py-3 rounded-4 px-5 ">
+
+                <iconify-icon class="icon  bg-white rounded-pill fw-bolder fs-1 p-1 "
+                  icon="lets-icons:message-light"></iconify-icon>
+
+                <p>Pay for purchases by installments</p>
+              </div>
             </div>
           </div>
         </div>
@@ -140,20 +158,6 @@
 
 
       </div>
-
-
-
-
-      
-
-
-      <div>
-        h1hello
-      </div>
-
-
-
-
 
 
 
@@ -164,14 +168,7 @@
     </div>
   </div>
 
-
-
-
-
-<a href="/pages/login.html">Thanks</a>
-
-  <a href="/pages/home.html">Foe home page just touch me</a>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

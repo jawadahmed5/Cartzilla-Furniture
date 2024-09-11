@@ -35,20 +35,20 @@
                     <h1 class="mt-4 ">Welcome back!</h1>
                     <p>Don't have an account? <a href="/index.html" class="text-black">Create an account</a></p>
 
-                    <form action="">
+                    <form action="" id="login-page">
                         <div class="mb-3 mt-3">
-                            <label for="exampleFormControlInput1" class="form-label mt-3">Email address</label>
-                            <input type="email" class="form-control py-3" id="exampleFormControlInput1"
+                            <label for="loginEmail" class="form-label mt-3">Email address</label>
+                            <input  type="email" class="form-control py-3" id="loginEmail"
                                 placeholder="Email Address" required>
                         </div>
-                        <label for="inputPassword5" class="form-label ">Password</label>
-                        <input type="password" id="inputPassword5" class="form-control py-3"
+                        <label for="loginPassword" class="form-label ">Password</label>
+                        <input type="password" id="loginPassword" class="form-control py-3"
                             aria-describedby="passwordHelpBlock" placeholder="Password" required>
                         <div id="passwordHelpBlock" class="form-text mt-2 mb-3">
                         </div>
                         <input type="checkbox"><span class="form-text ms-2 mt-5">I have read and accept the Privacy
                             Policy</span>
-                        <button type="button" class="btn btn-danger w-100 py-2 fw-semibold mt-4 mb-2 fs-5">Create an
+                        <button type="submit" class="btn btn-danger w-100 py-2 fw-semibold mt-4 mb-2 fs-5">Create an
                             account
                             ></button>
 
@@ -112,7 +112,7 @@
 
 
     <a href="/pages/home.html">Foe home page just touch me</a>
-
+<script src="/script/loginscript.js"></script>
 </body>
 
 </html>
