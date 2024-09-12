@@ -15,26 +15,3 @@ window.location.href="/pages/login.html"
     
 }
 });
-
-
-// LOGIN PAGE //
-document.getElementById("login-page").addEventListener('submit', function(e){
-    e.preventDefault();
-
-    let localStorageEmail = localStorage.getItem("email")
-    let localStoragePassword = localStorage.getItem("password")
-
-    let loginUserEmail = document.getElementById("loginEmail")
-    let loginUserPassword = document.getElementById("loginPassword")
-    
-    if (localStorageEmail === loginUserEmail && localStoragePassword === loginUserPassword) {
-        window.location.href="/index.html"
-
-            }else{
-                alert("invalid data")
-            }
-
-
-
-
-})
