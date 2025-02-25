@@ -17,7 +17,7 @@ document.getElementById("login-page").addEventListener('submit', async function(
     
     if (user) {
         alert('Login successful!');
-       window.location.href = '/pages/home.html'; 
+       window.location.href = '/pages/index.html'; 
     } else {
         let localStorageEmail = localStorage.getItem("email")
             let localStoragePassword = localStorage.getItem("password")
@@ -27,7 +27,7 @@ document.getElementById("login-page").addEventListener('submit', async function(
         
         
             if (localStorageEmail === loginUserEmail && localStoragePassword === loginUserPassword  ) {
-                window.location.href="/pages/home.html"
+                window.location.href="/pages/index.html"
         
             } else {
             alert('user not found, try again');
